@@ -50,25 +50,33 @@ allure open allure-report
 ```
 ## 📁 Project Structure
 A_website_testing_with_WebdriverIO/
+
 │
+
 ├── specs/                # Test specifications
+
 ├── test/                 # Test files or helpers
+
 ├── allure-results/       # Raw test results (auto-generated)
+
 ├── allure-report/        # HTML reports (auto-generated)
+
 ├── wdio.conf.js          # WebdriverIO configuration
+
 ├── package.json          # Project metadata and dependencies
+
 └── .gitignore            # Files/folders to be ignored by Git
 
 ## 📚 Technologies Used
-WebdriverIO
+1. WebdriverIO
 
-Mocha
+2. Mocha
 
-Allure Reporter
+3. Allure Reporter
 
-Node.js
+4. Node.js
 
 ## 🙌 Acknowledgements
 1. WebdriverIO Documentation
 
-2.Allure Framework
+2. Allure Framework
