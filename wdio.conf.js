@@ -1,3 +1,5 @@
+const search ="./specs/search.spec.js";
+const product ="./specs/product.spec.js";
 exports.config = {
     //
     // ====================
@@ -20,7 +22,10 @@ exports.config = {
     // The path of the spec files will be resolved relative from the directory of
     // of the config file unless it's absolute.
     //
-    specs: ["./specs/search.spec.js"],
+    specs: [search],
+    suites:{
+        productToCart:[[search,product]],
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -233,7 +238,7 @@ exports.config = {
      */
     afterTest: async function(test, context, { error, result, duration, passed, retries }) {
         if(error){
-            const screenshot = await browser.screenshot();
+            const screenshot = await browser.takeScreenshot();
             allure.addAttachment('Screenshot',Buffer.from(screenshot,'base64'),"failure/png");
         }
     },
