@@ -8,7 +8,7 @@ It also integrates Allure Reporter for generating beautiful test reports.
 
 ### Prerequisites
 Make sure you have the following installed:
-- Node.js (v14+ recommended)
+- Node.js 
 - npm or yarn
 - A code editor like VS Code
 
